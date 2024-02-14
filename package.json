@@ -1,0 +1,18 @@
+{
+  "name": "tugaskelompok_petshop",
+  "version": "1.0.0",
+  "description": "ESD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kresna Mukti",
+  "license": "ISC",
+  "dependencies": {
+    "@ngrok/ngrok": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.3",
+    "joi": "^17.12.1"
+  }
+}
