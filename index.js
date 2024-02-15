@@ -157,7 +157,7 @@ app.post('/product', (req, res) => {
     price,
     stock,
     type,
-    image: `/image/${filename}`
+    image: `/images/${filename}`
   }
 
   console.log(newProduct)
@@ -216,26 +216,27 @@ app.put('/product/:id', (req, res) => {
   })
 })
 
-// delete product
+
 app.delete('/product/:id', (req, res) => {
-  const id = req.params.id
+  const id = req.params.id;
 
-  const searchproductid = product.find(searchproductid => searchproductid.id == id)
+  const productToDelete = product.find(product => product.id == id);
 
-  if(!searchproductid) {
+  if (!productToDelete) {
     return res.status(404).json({
       messages: "Data Not Found"
-    })
+    });
   }
 
-  const index = product.indexOf(product)
-  product.splice(index, 1)
+  const index = product.indexOf(productToDelete);
+  product.splice(index, 1);
 
   res.status(200).json({
     messages: "Success Delete Data",
-    data: product
-  })
-})
+    data: productToDelete
+  });
+});
+
 
 //checkout
 let cart = [{
