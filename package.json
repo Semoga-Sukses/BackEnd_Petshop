@@ -1,18 +1,22 @@
 {
-  "name": "tugaskelompok_petshop",
-  "version": "1.0.0",
-  "description": "ESD",
-  "main": "index.js",
+  "name": "tugaskelompok-petshop",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "dev": "nodemon server.js"
   },
-  "author": "Kresna Mukti",
-  "license": "ISC",
   "dependencies": {
-    "@ngrok/ngrok": "^1.0.0",
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
     "express-fileupload": "^1.4.3",
-    "joi": "^17.12.1"
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "joi": "^17.12.2",
+    "morgan": "~1.9.1",
+    "pug": "^3.0.2",
+    "sequelize": "^6.37.1",
+    "sqlite3": "^5.1.7"
   }
 }
