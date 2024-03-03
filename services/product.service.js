@@ -1,4 +1,4 @@
-const { products } = require('../models/products')   
+const { products } = require('../models')   
 const { saveImage } = require('../helpers/saveImage.helper')
 const fs = require('fs')
 const { deleteImageHelper } = require('../helpers/deleteImage.helper')
